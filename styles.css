@@ -1,0 +1,67 @@
+.container {
+  background-image: url(https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  padding: 115px 115px;
+  border-radius: 5px;
+  box-shadow: 7px 7px 7px 7px black;
+  color: #f3f4ed;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+.container:hover {
+  color: #819aa4;
+  transition: ease-in-out;
+}
+.form {
+  border-radius: 1px 15px;
+  border-color: #819aa4;
+}
+.searchbox {
+  border-radius: 1px 15px;
+  border-color: #819aa4;
+}
+.searchbox:hover {
+  background-color: #819aa4;
+}
+h1 {
+  text-align: center;
+  position: relative;
+  color: #f3f4ed;
+  font-size: 18px;
+}
+h1:hover {
+  color: #819aa4;
+  transition: ease-in-out;
+}
+h2 {
+  position: relative;
+  font-size: 30px;
+}
+.temp {
+  font-size: 22px;
+}
+button:hover {
+  background-color: #819aa4;
+  color: black;
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+button {
+  border-radius: 1px 15px;
+  border-color: #819aa4;
+  cursor: pointer;
+  transition: opacity 2s ease-out, background 1s linear, width 1s, height 1s,
+    font-size 1s;
+}
+
+.fa-cloud-showers-heavy {
+  color: #dddddd;
+}
+.fa-sun {
+  color: #fff9b0;
+}
+.fa-cloud-sun {
+  color: #78c4d4;
+}
