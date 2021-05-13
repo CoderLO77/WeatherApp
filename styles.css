@@ -32,6 +32,11 @@ h2 {
   position: relative;
   font-size: 30px;
 }
+.description{
+text-align:center;
+position:relative;
+max-width: 100px;
+}
 .weather-list{
   position: absolute; top: 5px; right: 5px;
   list-style: none;
