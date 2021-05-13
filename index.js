@@ -62,10 +62,10 @@ function showTemperature(response) {
   let forecastElement=document.querySelector("#forecast");
   humidityElement.innerHTML=response.data.main.humidity;
   windElement.innerHTML= Math.round(response.data.wind.speed);
-  description.innerHTML= response.data.weather[0].description;
+  descriptionElement.innerHTML= response.data.weather[0].description;
    iconElement.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    `https://duckduckgo.com/assets/weather/icons/${response.data.weather[0].icon}.svg`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
