@@ -84,6 +84,12 @@ position: absolute; bottom: 5px; left: 5px;
 
 }
 .activeF{
-  color:black;
+  color:#3D2C24;
   cursor:default;
+}
+.celsius{
+  cursor:default;
+}
+.description{
+text-transform: capitalize;
 }
