@@ -40,25 +40,27 @@ let currentTime = document.querySelector("#current-time");
 let currentDate = new Date();
 currentTime.innerHTML = formatDate(currentDate);
 
-function showForecast(){
+function showForecast(response){
+  let forecast=response.data.daily;
   let forecastElement=document.querySelector("#forecast");
   let forecastHTML=`<div class="row">`;
-  let days=["Wed", "Thurs", "Fri", "Sat", "Sun"];
-  days.forEach(function(day){
+  forecast.forEach(function(forecastDay, index){
+    if (index<8){
   forecastHTML=
   forecastHTML+
   `
-        <div class="col-2">
-        <div class="weather-forecastdate">${day}</div>
-            <img src="http://openweathermap.org/img/wn/50d@2x.png"
+        <div class="col-3">
+        <div class="weather-forecastdate">${formatDay(forecastDay.dt)}</div>
+            <img src="http://openweathermap.org/img/wn/${forecastDay.weather[0].icon}@2x.png"
             alt=""
             width="40"
             />
             <div class="weather-forecasttemp">
-           <span>65°</span>|<span>50°</span>
+           <span>${Math.round(forecastDay.temp.max)}°</span>|<span>${Math.round(forecastDay.temp.min)}°</span>
        </div>
        </div>
        `;
+  }
   });
        forecastHTML=forecastHTML+ `</div>`;
        forecastElement.innerHTML=forecastHTML;
