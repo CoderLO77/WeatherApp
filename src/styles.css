@@ -93,4 +93,13 @@ position: absolute; bottom: 5px; left: 5px;
 .des{
 text-transform: capitalize;
 }
+.weather-forecast{
+  text-align:center;
+}
+.weather-forecastdate{
+  font-size: 14px;
+}
+.weather-forecasttemp {
+font-size: 14px;
+}
 
