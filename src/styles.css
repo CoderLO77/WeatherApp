@@ -90,7 +90,7 @@ position: absolute; bottom: 5px; left: 5px;
 .celsius{
   cursor:default;
 }
-.description{
+.des{
 text-transform: capitalize;
 }
 
