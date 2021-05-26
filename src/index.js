@@ -159,5 +159,6 @@ let fahrenheitLink=document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 search("Austin");
+showForecast();
 
 
