@@ -40,6 +40,15 @@ let currentTime = document.querySelector("#current-time");
 let currentDate = new Date();
 currentTime.innerHTML = formatDate(currentDate);
 
+
+function formatDay(timestamp){
+  let date= new Date(timestamp*1000);
+  let day= date.getDay();
+  let days= ["Sunday",  "Monday",  "Tuesday",  "Wednesday",  "Thursday",  "Friday",  "Saturday"];
+
+  return days[day];
+}
+
 function showForecast(response){
   let forecast=response.data.daily;
   let forecastElement=document.querySelector("#forecast");
