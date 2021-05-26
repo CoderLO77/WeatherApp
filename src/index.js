@@ -40,6 +40,31 @@ let currentTime = document.querySelector("#current-time");
 let currentDate = new Date();
 currentTime.innerHTML = formatDate(currentDate);
 
+function showForecast(){
+  let forecastElement=document.querySelector("#forecast");
+  let forecastHTML=`<div class="row">`;
+  let days=["Wed", "Thurs", "Fri", "Sat", "Sun"];
+  days.forEach(function(day){
+  forecastHTML=
+  forecastHTML+
+  `
+        <div class="col-2">
+        <div class="weather-forecastdate">${day}</div>
+            <img src="http://openweathermap.org/img/wn/50d@2x.png"
+            alt=""
+            width="40"
+            />
+            <div class="weather-forecasttemp">
+           <span>65°</span>|<span>50°</span>
+       </div>
+       </div>
+       `;
+  });
+       forecastHTML=forecastHTML+ `</div>`;
+       forecastElement.innerHTML=forecastHTML;
+      
+}
+
 function getForecast(coordinates){
   let apiKey="0ab851116d25275147c4636ad9ba56ee";
   let apiurl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
