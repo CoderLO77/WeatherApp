@@ -1,9 +1,9 @@
 .container-wrapper {
-  background-image: url(https://images.unsplash.com/photo-1488875482628-eee706cbfad5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80);
+  background-image:url(https://images.pexels.com/photos/7527825/pexels-photo-7527825.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   padding: 115px 115px;
   border-radius: 5px;
   box-shadow: 7px 7px 7px 7px black;
-  color: #f3f4ed;
+  color:black;
   font-size: 18px;
   text-align: center;
   position: relative;
@@ -25,7 +25,7 @@
 h1 {
   text-align: center;
   position: relative;
-  color: #f3f4ed;
+  color: black;
   font-size: 18px;
 }
 h2 {
@@ -88,6 +88,7 @@ position: absolute; bottom: 5px; left: 5px;
   cursor:default;
 }
 .celsius{
+  color:#48484A;
   cursor:default;
 }
 .des{
@@ -98,6 +99,7 @@ text-transform: capitalize;
 }
 .weather-forecastdate{
   font-size: 14px;
+  margin-top:20px;
 }
 .weather-forecasttemp {
 font-size: 14px;
