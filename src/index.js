@@ -69,8 +69,8 @@ function showForecast(response){
 
 function getForecast(coordinates){
   let apiKey="0ab851116d25275147c4636ad9ba56ee";
-  let apiurl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-  axios.get(apiUrl).then(displayForecast);
+  let apiUrl=`https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+  axios.get(apiUrl).then(showForecast);
 }
 
 function showTemperature(response) {
@@ -161,6 +161,5 @@ let fahrenheitLink=document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 search("Austin");
-showForecast();
 
 
