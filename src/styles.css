@@ -66,7 +66,7 @@ button {
 .app{
 text-decoration: none;
 font-size:10px;
-position: absolute; bottom: 5px; left: 5px;
+margin-top:2px;
 }
 .app-button{
   border-radius: 1px 50px;
